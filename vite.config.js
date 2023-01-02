@@ -21,7 +21,11 @@ export default defineConfig({
 
   plugins: [
     //vue(),
-    liveReload(__dirname+'/**/*.php')
+    liveReload([
+      `${__dirname}/**/*.php`,
+      `${__dirname}/**/*.css`,
+      `${__dirname}/**/*.js`,
+    ])
   ],
 
   // config
@@ -88,6 +92,8 @@ export default defineConfig({
 
     hmr: {
       host: 'localhost',
+      port: 3000,
+      protocol: 'ws',
       //port: 443
     },
     

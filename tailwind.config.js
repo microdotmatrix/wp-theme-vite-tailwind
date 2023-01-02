@@ -1,7 +1,7 @@
 module.exports = {
   content: [
     // https://tailwindcss.com/docs/content-configuration
-    './*.php',
+    './**/*.php',
     './inc/**/*.php',
     './templates/**/*.php',
     './safelist.txt'
@@ -13,8 +13,21 @@ module.exports = {
     //  pattern: /text-(white|black)-(200|500|800)/
     //}
   ],
+  darkMode: 'class',
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        'primary': '#1ba3aa',
+        'secondary': '#f84292',
+        'light': '#f6f1cf',
+        'mid': '#97acb7',
+        'dark': '#232323',
+        'caution': '#f6b437',
+        'highlight': '#efc46c',
+        'gray': '#4e4c4c',
+        'dark': '#090b0c',
+      }
+    }
   },
   plugins: []
 }

@@ -1,6 +1,18 @@
+:root {
+  --c-primary: #1ba3aa;
+  --c-secondary: #f84292;
+  --c-light: #f6f1cf;
+  --c-mid: #97acb7;
+  --c-dark: #232323;
+  --c-caution: #f6b437;
+  --c-highlight: #efc46c;
+  --c-gray: #4e4c4c;
+  --c-dark: #090b0c;
+}
+
 body {
-    --background-color: grey;
-    --color: red;
+  --background-color: #f6f6f6;
+  --color: var(--c-dark);
 }
 
 .main-menu {
