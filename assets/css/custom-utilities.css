@@ -1,7 +1,11 @@
 :root {
-  --c-primary: #1ba3aa;
-  --c-secondary: #f84292;
-  --c-light: #f6f1cf;
+  --c-blue-dark: #2d537c;
+  --c-blue-mid: #1ba3aa;
+  --c-blue-bright: #00ead0;
+  --c-pink-mid: #f84292;
+  --c-pink-bright: #fc459e;
+  --c-yellow-bright: #fdf4b7;
+  --c-yellow-light: #f6f1cf;
   --c-mid: #97acb7;
   --c-dark: #232323;
   --c-caution: #f6b437;

@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development vite",
-    "build": "vite build"
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

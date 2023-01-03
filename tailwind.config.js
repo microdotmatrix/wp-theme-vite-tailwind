@@ -17,9 +17,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#1ba3aa',
-        'secondary': '#f84292',
-        'light': '#f6f1cf',
+        "blue-dark": "#2d537c",
+        "blue-mid": "#1ba3aa",
+        "blue-bright": "#00ead0",
+        "pink-mid": "#f84292",
+        "pink-bright": "#fc459e",
+        "yellow-bright": "#fdf4b7",
+        "yellow-light": "#f6f1cf",
         'mid': '#97acb7',
         'dark': '#232323',
         'caution': '#f6b437',
