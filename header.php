@@ -9,8 +9,8 @@
 <body <?php body_class('flex flex-col h-screen') ?>>
   <?php wp_body_open(); ?>
 
-    <header class="flex-0 bg-yellow-bright shadow-md">
-      <div class="container mx-auto flex justify-between items-center py-12 min-h-[40px]">
+    <header class="flex-0 bg-yellow-bright shadow-md  border-b-[20px] border-b-blue-dark">
+      <div class="container mx-auto flex justify-between items-center py-6 min-h-[40px]">
         <section class="title-block flex-none text-center px-1">
           <div class="bg-blue-bright p-4 rounded-full divide-y">
             <h3 class="site-name text-3xl leading-relaxed">
@@ -19,9 +19,42 @@
             <h5 class="site-tagline text-lg uppercase">Speech Therapy</h5>
           </div>
         </section>
-        <section class="menu-block flex-1 justify-end text-right">
-          <nav class="w-3/4 mx-auto">
-            <ul class="flex flex-row justify-between [&_li]:text-center [&_li]:w-full">
+        <section class="menu-block flex-1 flex justify-center">
+          <div class="grid grid-cols-5 grid-rows-2 w-3/4 [&_div]:text-center [&_div]:border-t-0">
+            <div class="col-span-1 row-span-1">
+              <a href="/">Home</a>
+            </div>
+            <div class="col-span-1 row-span-1">
+              <a href="/services">Services</a>
+            </div>
+            <div class="col-span-1 row-span-1">
+              <a href="/clinicians">Our Clinicians</a>
+            </div>
+            <div class="col-span-1 row-span-1">
+              <a href="/faq">FAQ</a>
+            </div>
+            <div class="col-span-1 row-span-1">
+              <a href="/contact">Contact</a>
+            </div>
+            <div class="col-span-1 row-start-2">
+              <a href="/">H</a>
+            </div>
+            <div class="col-span-1 row-span-1">
+              <a href="/services">S</a>
+            </div>
+            <div class="col-span-1 row-span-1">
+              <a href="/clinicians">O</a>
+            </div>
+            <div class="col-span-1 row-span-1">
+              <a href="/faq">F</a>
+            </div>
+            <div class="col-span-1 row-span-1">
+              <a href="/contact">C</a>
+            </div>
+          </div>  
+          
+          <!--<nav class="w-3/4 mx-auto">
+            <ul class="flex flex-row justify-around [&_li]:text-center [&_li]:w-full">
               <li>
                 <a href="/">Home</a>
               </li>
@@ -38,8 +71,9 @@
                 <a href="/contact">Contact</a>
               </li>
             </ul>
-          </nav>
-          <!--<?php echo wp_nav_menu() ?>-->
+          </nav>-->
+          <div class="hidden"><?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?></div>
+          <div class="hidden"><?php echo wp_nav_menu() ?></div>
         </section>
         <section class="flex-none">
           <h4 class="text-xl tracking-wide font-semibold">Call: (281) 246-0004</h4>
