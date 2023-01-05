@@ -6,4 +6,8 @@
   </div>
 </main>
 
+<div class="w-full h-full">
+
+</div>
+
 <?php get_footer() ?>
