@@ -12,6 +12,7 @@
 //import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
 import liveReload from 'vite-plugin-live-reload'
+import webfontDownload from 'vite-plugin-webfont-dl'
 const { resolve } = require('path')
 const fs = require('fs')
 
@@ -20,12 +21,21 @@ const fs = require('fs')
 export default defineConfig({
 
   plugins: [
-    //vue(),
     liveReload([
       `${__dirname}/**/*.php`,
       `${__dirname}/**/*.css`,
       `${__dirname}/**/*.js`,
-    ])
+    ]),
+    webfontDownload(
+      [
+        'https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap'
+      ],
+      {
+        injectAsStyleTag: false,
+        minifyCss: true,
+        async: true
+      }
+    )
   ],
 
   // config

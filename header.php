@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet" />
   <?php wp_head() ?>
 </head>
 <body <?php body_class('flex flex-col h-screen') ?>>
@@ -20,38 +23,42 @@
           </div>
         </section>
         <section class="menu-block flex-1 flex justify-center">
-          <div class="grid grid-cols-5 grid-rows-2 w-3/4 [&_div]:text-center [&_div]:border-t-0">
-            <div class="col-span-1 row-span-1">
-              <a href="/">Home</a>
+          <nav class="menu">
+            <div class="row">
+              <div class="col">
+                <a href="/">Home</a>
+              </div>
+              <div class="col">
+                <a href="/services">Services</a>
+              </div>
+              <div class="col">
+                <a href="/clinicians">Our Clinicians</a>
+              </div>
+              <div class="col">
+                <a href="/faq">FAQ</a>
+              </div>
+              <div class="col">
+                <a href="/contact">Contact</a>
+              </div>
             </div>
-            <div class="col-span-1 row-span-1">
-              <a href="/services">Services</a>
+            <div class="row">
+              <div class="col">
+                <img src="/assets/img/icons/boy-outline.png" alt="Home" />
+              </div>
+              <div class="col">
+                <a href="/services">S</a>
+              </div>
+              <div class="col">
+                <a href="/clinicians">O</a>
+              </div>
+              <div class="col">
+                <a href="/faq">F</a>
+              </div>
+              <div class="col">
+                <a href="/contact">C</a>
+              </div>
             </div>
-            <div class="col-span-1 row-span-1">
-              <a href="/clinicians">Our Clinicians</a>
-            </div>
-            <div class="col-span-1 row-span-1">
-              <a href="/faq">FAQ</a>
-            </div>
-            <div class="col-span-1 row-span-1">
-              <a href="/contact">Contact</a>
-            </div>
-            <div class="col-span-1 row-start-2">
-              <a href="/">H</a>
-            </div>
-            <div class="col-span-1 row-span-1">
-              <a href="/services">S</a>
-            </div>
-            <div class="col-span-1 row-span-1">
-              <a href="/clinicians">O</a>
-            </div>
-            <div class="col-span-1 row-span-1">
-              <a href="/faq">F</a>
-            </div>
-            <div class="col-span-1 row-span-1">
-              <a href="/contact">C</a>
-            </div>
-          </div>  
+          </nav>  
           
           <!--<nav class="w-3/4 mx-auto">
             <ul class="flex flex-row justify-around [&_li]:text-center [&_li]:w-full">

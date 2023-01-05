@@ -19,9 +19,7 @@ body {
   --color: var(--c-dark);
 }
 
-.main-menu {
-    .current-menu-item,
-    .current_page_item {
-        @apply underline;
-    }
+.main-menu .current-menu-item,
+.main-menu .current_page_item {
+    @apply underline;
 }
