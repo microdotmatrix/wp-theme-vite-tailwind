@@ -13,13 +13,15 @@
 import { defineConfig } from 'vite'
 import liveReload from 'vite-plugin-live-reload'
 import webfontDownload from 'vite-plugin-webfont-dl'
+import mkcert from'vite-plugin-mkcert'
 const { resolve } = require('path')
 const fs = require('fs')
 
 
 // https://vitejs.dev/config
 export default defineConfig({
-
+  publicDir: './dist/assets',
+  assetsInclude: ['**/*.woff2'],
   plugins: [
     liveReload([
       `${__dirname}/**/*.php`,
@@ -35,11 +37,12 @@ export default defineConfig({
         minifyCss: true,
         async: true
       }
-    )
+    ),
+    mkcert()
   ],
 
   // config
-  root: '',
+  root: './',
   base: process.env.NODE_ENV === 'development'
     ? '/'
     : '/dist/',

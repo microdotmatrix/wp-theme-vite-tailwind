@@ -66,7 +66,13 @@ add_action( 'wp_enqueue_scripts', function() {
 
         }
 
+        // wp_enqueue_style('main', get_template_directory_uri() . '/dist/assets' . '/main-a4dfc45a.css' );
+        // wp_enqueue_style('fonts', get_template_directory_uri() . '/dist/assets' . '/webfonts-cbb36cf8.css' );
+        // wp_enqueue_script( 'main', get_template_directory_uri() . '/dist/assets' . '/main-f62f0eb4.js', JS_DEPENDENCY, '', JS_LOAD_IN_FOOTER );
+
     }
+
+    wp_enqueue_script( 'icons', 'https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js' );
 
 
 });

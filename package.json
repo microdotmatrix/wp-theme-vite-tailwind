@@ -16,6 +16,7 @@
     "vite": "^4.0.1",
     "vite-plugin-image-presets": "^0.3.3",
     "vite-plugin-live-reload": "^3.0.1",
+    "vite-plugin-mkcert": "^1.11.0",
     "vite-plugin-webfont-dl": "^3.4.2"
   }
 }

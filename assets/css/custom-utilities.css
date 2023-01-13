@@ -11,11 +11,17 @@
   --c-caution: #f6b437;
   --c-highlight: #efc46c;
   --c-gray: #4e4c4c;
-  --c-dark: #090b0c;
+  --c-dark: #223850;
+  --c-darker: #090b0c;
+  --c-light: #f6f6f6;
+
+  --font-kollektif: 'Kollektif', sans-serif;
+  --font-walter: 'Walter Turncoat', cursive;
+  --font-bryndan: 'Bryndan Write', cursive;
 }
 
 body {
-  --background-color: #f6f6f6;
+  --background-color: var(--c-light);
   --color: var(--c-dark);
 }
 

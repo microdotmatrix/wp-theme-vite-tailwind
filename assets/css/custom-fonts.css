@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Bryndan Write";
+  src: url("https://downpress.stfu/wp-content/themes/cypress/assets/fonts/BryndanWriteBook.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kollektif";
+  src: url("https://downpress.stfu/wp-content/themes/cypress/assets/fonts/kollektif/Kollektif.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kollektif";
+  src: url("https://downpress.stfu/wp-content/themes/cypress/assets/fonts/kollektif/Kollektif-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kollektif";
+  src: url("https://downpress.stfu/wp-content/themes/cypress/assets/fonts/kollektif/Kollektif-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}

@@ -30,6 +30,12 @@ module.exports = {
         'highlight': '#efc46c',
         'gray': '#4e4c4c',
         'dark': '#090b0c',
+        'light': '#f6f6f6',
+      },
+      fontFamily: {
+        'sans': ['Kollektif', 'sans-serif'],
+        'serif': ['Brynden Write Book', 'serif'],
+        'display': ['Walter Turncoat', 'cursive'],
       }
     }
   },
